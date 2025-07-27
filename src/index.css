@@ -185,8 +185,8 @@ Dark mode first with glassmorphism and modern aesthetics
   }
   
   @keyframes glow {
-    from { box-shadow: 0 0 20px hsl(250 84% 60% / 0.3); }
-    to { box-shadow: 0 0 40px hsl(250 84% 60% / 0.6), 0 0 60px hsl(250 84% 60% / 0.3); }
+    from { text-shadow: 0 0 20px hsl(250 84% 60% / 0.3); }
+    to { text-shadow: 0 0 40px hsl(250 84% 60% / 0.6), 0 0 60px hsl(190 95% 65% / 0.3); }
   }
 }
 
