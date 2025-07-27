@@ -50,7 +50,7 @@ const Home = () => {
       name: "Sarah Johnson",
       role: "Marketing Director",
       company: "TechCorp",
-      content: "Oziora has transformed our workflow. The AI agents are incredibly powerful and easy to integrate.",
+                    content: "Zorelius has transformed our workflow. The AI agents are incredibly powerful and easy to integrate.",
       rating: 5,
     },
     {
@@ -98,11 +98,11 @@ const Home = () => {
           </Badge>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-glow">
-            Oziora
+            Zorelius
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-            Where AI Agents Work For You
+            A Civilisation of Intelligence
           </p>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
@@ -223,7 +223,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Loved by Creators & Businesses</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              See what our community has to say about Oziora
+              See what our community has to say about Zorelius
             </p>
           </div>
 
