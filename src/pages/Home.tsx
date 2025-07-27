@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
-import { ArrowRight, Bot, Zap, DollarSign, Star, TrendingUp, Users, Award } from "lucide-react";
+import { ArrowRight, Bot, Zap, DollarSign, Star, TrendingUp, Users, Award, Search, Filter } from "lucide-react";
 import AgentCard from "@/components/AgentCard";
 
 const Home = () => {
@@ -198,6 +199,48 @@ const Home = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Discover the most popular automation agents trusted by thousands
             </p>
+          </div>
+
+          {/* Search and Filters */}
+          <div className="max-w-4xl mx-auto mb-12 space-y-6">
+            {/* Search Bar */}
+            <div className="relative">
+              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
+              <Input
+                placeholder="Search agents, functions, or creators..."
+                className="pl-12 h-14 text-lg glass-card border-0 bg-card/50"
+              />
+            </div>
+
+            {/* Filters Button */}
+            <div className="flex justify-center">
+              <Button variant="outline" className="glass-card border-0 bg-card/30 hover:bg-card/50">
+                <Filter className="w-4 h-4 mr-2" />
+                Filters
+              </Button>
+            </div>
+
+            {/* Categories */}
+            <div className="flex flex-wrap justify-center gap-3">
+              {["All", "Popular", "Productivity", "Analytics", "Creative", "Social Media", "Business"].map((category) => (
+                <Badge
+                  key={category}
+                  variant={category === "All" ? "default" : "secondary"}
+                  className={`px-4 py-2 text-sm font-medium cursor-pointer transition-all hover:scale-105 ${
+                    category === "All" 
+                      ? "bg-primary hover:bg-primary/90" 
+                      : "bg-accent/20 hover:bg-accent/30 text-accent-foreground"
+                  }`}
+                >
+                  {category}
+                </Badge>
+              ))}
+            </div>
+
+            {/* Results Count */}
+            <div className="text-center">
+              <p className="text-muted-foreground">Showing 6 agents</p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
